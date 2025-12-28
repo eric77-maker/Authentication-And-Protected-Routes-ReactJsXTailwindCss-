@@ -1,0 +1,614 @@
+@import 'tailwindCss';
+
+
+
+@layer base{
+    /* Reset */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    /* Reset Ends */
+
+
+    /* Utility styles */
+    .lInP{
+        width: 100%;
+        min-width: 180px;
+        max-width: 300px;
+       @apply rounded border-none outline-none text-white  px-2;
+    }
+
+    .rALabel{
+        width: 100%;
+        min-width: 180px;
+        max-width: 300px;
+    }
+
+    .lAInP{
+        width: 100%;
+        min-width: 180px;
+        max-width: 300px;
+       @apply rounded border-none outline-none text-white  px-2;
+    }
+
+    .removeScrollBar::-webkit-scrollbar{
+        display: none;
+    }
+
+    .formInnerContainer{
+        width: 100%;
+        min-width: 180px;
+        max-width: 500px;
+    }
+
+    .customerIndServiceTitle{
+        @apply p-[4px];
+    }
+
+    .customerIndServiceSubText{
+        @apply max-w-[400px];
+    }
+
+    .fadeIn{
+        opacity: 0;
+        animation-name: fadeInAnim;
+        animation-delay: 0.2s;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnim{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .fadeInTwo{
+        opacity: 0.2;
+        filter: brightness(90%); 
+        transform: translateX(-10%);
+        animation-name: fadeInTwoAnim;
+        animation-delay: 0.2s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInTwoAnim{
+        0%{
+            opacity: 0.2;
+            filter: brightness(90%); 
+            transform: translateX(-10%);
+        }
+
+        100%{
+            opacity: 1;
+            filter: brightness(100%);
+            transform: translateX(0);
+        }
+    }
+
+    .fadeUp{
+        transform: translateY(50%);
+        opacity: 0;
+        animation-name: fadeUpAnim;
+        animation-delay: 0.5s;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeUpAnim{
+        0%{
+            transform: translateY(50%);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .btnFadeIn{
+        transform: translateY(30%);
+        opacity: 0;
+        animation-name: btnFadeInAnim;
+        animation-duration: 0.5s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes btnFadeInAnim{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Utility styles End */
+
+
+    /* General Styles */
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow-y: hidden;
+    }
+    /* General Styles End */
+
+    /* mainHeader styles */
+    .mainHeader{
+        @apply h-[55px];
+    }
+
+    .mainHeaderTitle{
+        @apply text-xl py-1;
+    }
+
+    .mainHeaderNavMinMdNav{
+        @apply text-sm;
+    }
+
+    .mainHeaderNavMinMdLogoutBtn{
+        @apply text-[12px] py-[3px] px-[6px] rounded-[5.5px] ;
+    }
+    /* mainHeader styles end*/
+
+
+    /* headerDropDownMenu styles */
+    .headerDropDownMenu{
+        z-index: 10;
+        border-radius: 0 0 min(4px, 1vw) min(4px, 1vw);
+        transform: scaleY(0);
+    }
+    /* headerDropDownMenu styles end */
+
+    /* mainHeaderDropDownMenuBtnToggler styles */
+    .mainHeaderDropDownMenuBtnToggler{
+        @apply bg-indigo-900/90;
+        z-index: 5;
+    }
+    /* mainHeaderDropDownMenuBtnToggler styles end*/
+
+    /* showheaderDropDownMenu styles */
+    .showHeaderDropDownMenu{
+        animation-name: showHeaderMenuSlide;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        transform-origin: center top;
+        transition: transform 0.2s;
+    }
+
+    @keyframes  showHeaderMenuSlide{
+        0%{
+            transform: scaleY(0);
+        }
+
+        80%{
+            transform: scaleY(1.2);
+        }
+
+        100%{
+            transform: scaleY(1);
+        }
+    }
+    /* showheaderDropDownMenu styles End */
+
+    /* hideHeaderDropDownMenuOnMount styles */
+    .hideHeaderDropDownMenuOnMount{
+        opacity: 0;
+    }
+    /* hideHeaderDropDownMenuOnMount styles end*/
+
+    /* hideHeaderDropDownMenu styles */
+    .hideHeaderDropDownMenu{
+        animation-name: hideHeaderMenuSlide;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        transform-origin: top center;
+    }
+
+    @keyframes  hideHeaderMenuSlide{
+        0%{
+            transform: scaleY(1);
+        }
+
+        100%{
+            transform: scaleY(0);
+        }
+    }
+    /* hideHeaderDropDownMenu styles End */
+
+    .headerContentContainer{
+        z-index: 3;
+    }
+
+    .bgImgClass{
+        background-image: url('/src/assets/bankbg1.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    .mainDiv{
+        min-height: 100vh;
+        height: fit-content;
+    }
+
+    .removeScroll::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    .regBtnDiv{
+        width: 30vw;
+        min-width: 180px;
+        max-width: 300px;
+    }
+
+    .adminRegBtnDiv{
+        width: 50vw;
+        min-width: 180px;
+        max-width: 400px;
+    }
+
+    .loginBtn{
+        width: 30vw;
+        min-width: 200px;
+        max-width: 300px;
+    }
+
+    .regBtn{
+        padding: 3px 5px;
+        cursor: pointer;
+    }
+    /* adminMenuBtnToggler styles */
+    .adminMenuBtnToggler{
+        position: relative;
+        transition: transform 0.4s;
+        z-index: 7;
+    }
+
+    .adminMenuBtnToggler span{
+        position: absolute;
+        background-color: whitesmoke;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+
+    .adminMenuBtnToggler span:first-child{
+        transform: translateY(2px);
+        transition: all 0.5s;
+    }
+
+    .adminMenuBtnToggler span:nth-child(2){
+        transform: translateY(7px);
+    }
+
+    .adminMenuBtnToggler span:last-child{
+        transform: translateY(12px);
+    }
+
+    .animateAdminMenuToggler{
+        transform: rotate(90deg);
+    }
+
+    .animateAdminMenuToggler span{
+        @apply bg-blue-200;
+    }
+
+    .animateAdminMenuToggler span:first-child{
+        transform: rotate(45deg) translate(4px, 4px) scaleX(80%);
+    }
+
+    .animateAdminMenuToggler span:nth-child(2){
+        opacity: 0;
+    }
+
+    .animateAdminMenuToggler span:last-child{
+        transform: rotate(-45deg) translate(-4px, 4px) scaleX(80%);
+    }
+    /* adminMenuBtnToggler styles End */
+
+    .customerProfileBar{
+        @apply text-lg  p-[0.5rem] top-[2vh];
+    }
+
+    .customerIndServiceInfo{
+        @apply space-y-3 text-sm p-5;
+    }
+
+    .customerIndServiceInfo{
+        @apply text-sm px-5 space-y-3 pt-5;
+    }
+
+    .usrMenuBtnToggler{
+        position: relative;
+        transition: transform 0.4s;
+        @apply w-[16px] h-[16px];
+    }
+
+    .usrMenu{
+        z-index: 6;
+        transform: translateX(50%) scaleX(10%);
+        transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        opacity: 0;
+        font-size: clamp(1rem, 1.5vh, 1.5rem);
+    }
+
+    .animateUsrMenu{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .usrServicesContentDiv{
+        width: 60vw;
+    } 
+
+    /* customerSidebar styles */
+        .customerSidebar nav{
+            @apply text-sm;
+        }
+    /* customerSidebar styles end*/
+
+    @media screen and (max-width: 768px) {
+        .usrServicesContentDiv{
+            width: 90%;
+        }
+    } 
+
+    /* usrMenuBtnToggler styles */
+    .usrMenuBtnToggler span{
+        position: absolute;
+        background-color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+    }
+
+    .usrMenuBtnToggler span:first-child{
+        transform: translateY(3px) scaleX(80%);
+        transition: all 0.5s;
+    }
+
+    .usrMenuBtnToggler span:nth-child(2){
+        transform: translateY(7px) scaleX(80%);
+    }
+
+    .usrMenuBtnToggler span:last-child{
+        transform: translateY(11px) scaleX(80%);
+    }
+
+
+    .animateUsrMenuToggler{
+        opacity: 0;
+    }
+
+    .animateUsrMenuToggler span:first-child{
+        transform: rotate(45deg) translate(4px, 4px) scaleX(80%);
+    }
+
+    .animateUsrMenuToggler span:nth-child(2){
+        opacity: 0;
+    }
+
+    .animateUsrMenuToggler span:last-child{
+        transform: rotate(-45deg) translate(-4px, 4px) scaleX(80%);
+    }
+
+
+    .usrMenuCloseToggler{
+        transition: opacity 0.5s; 
+        opacity: 0;
+        border-radius: 50%;
+        @apply w-[16px] h-[16px] bg-red-100;
+    }
+
+    .usrMenuCloseToggler span{
+        position: absolute;
+        @apply bg-blue-900;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+
+    .usrMenuCloseToggler span:first-child{
+        transform: translateY(2px);
+    }
+
+    .usrMenuCloseToggler span:last-child{
+        transform: translateY(4px);
+    }
+
+    .animateUsrMenuCloseBtnToggler{
+        opacity: 1;
+    }
+
+    .animateUsrMenuCloseBtnToggler span{
+        transition: all 0.5s;
+    }
+    
+
+    .animateUsrMenuCloseBtnToggler span:first-child{
+        transform: rotate(45deg) translateY(2px) translate(4px, 2px) scaleX(80%);
+    }
+
+    .animateUsrMenuCloseBtnToggler span:last-child{
+        transform: rotate(-45deg) translateY(4px) translate(-4px, 0) scaleX(80%);
+    }
+    /* usrMenuBtnToggler styles End */
+
+
+    /* customerSideBarSlide styles */
+    .customerSideBarSlide{
+        @apply max-h-[88vh] top-[2vh] text-[0.9rem];
+        z-index: 6;
+    }
+    /* customerSideBarSlide styles end */
+
+    .usrProfileImgDiv{
+        @apply top-[2.5vh] sm:top-[2vh]   min-w-[8vh] lg:min-w-[12vh] max-w-[60px] sm:max-w-[80px];
+        z-index: 6;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .customerSidebar{
+            @apply hidden;
+        }
+
+        .customerSideBarSlideTopPart{
+            @apply flex;
+        }
+
+        .customerSideBarSlideTopBottom{
+            @apply justify-start;
+        }
+    }
+
+    @media screen and (max-height: 540px) and (min-aspect-ratio: 7/4) {
+        /* mainHeader styles */
+        .mainHeader{
+            @apply h-[8vh];
+        }
+
+        .mainHeaderTitle{
+            @apply text-[13px] py-[1px];
+        }
+
+        .mainHeaderNavMinMdNav{
+            @apply text-[10px];
+        }
+
+        .mainHeaderNavMinMdLogoutBtn{
+            @apply flex items-center justify-center text-[8px] py-[2px] px-[5px] rounded-[3px] ;
+        }
+        /* mainHeader styles end */
+
+
+        .rALabel{
+            width: 100%;
+            min-width: 180px;
+            max-width: max(30vw,300px);
+        }
+    
+        .lAInP{
+            width: 100%;
+            min-width: 180px;
+            max-width: max(30vw,300px);
+        }
+
+        .customerSidebar nav{
+            @apply text-[8px];
+        }
+
+        .customerProfileBar{
+            @apply top-[1vh] text-[8px]  py-[3px] px-[0.5rem];
+        }
+
+        .usrProfileImgDiv{
+            @apply top-[1.8vh] min-w-[8vh] lg:min-w-[12vh] max-w-[11vh];
+            z-index: 6;
+        }
+
+        .customerSideBarSlide{
+            @apply max-h-[88vh] top-[1vh] text-[8px];
+        }
+
+        .customerSidebar{
+            @apply flex;
+        }
+
+        .usrMenuBtnToggler{
+            @apply w-[8px] h-[8px];
+        }
+
+        .usrMenuBtnToggler span{
+            height: 1px;
+        }
+
+        .usrMenuBtnToggler span:first-child{
+            transform: translateY(1px);
+            transition: all 0.5s;
+        }
+    
+        .usrMenuBtnToggler span:nth-child(2){
+            transform: translateY(4px);
+        }
+    
+        .usrMenuBtnToggler span:last-child{
+            transform: translateY(7px);
+        }
+    
+        .animateUsrMenuToggler{
+            transform: rotate(90deg);
+            border-radius: 50%;
+        }
+    
+        .animateUsrMenuToggler span{
+            background-color: wheat;
+        }
+    
+        .animateUsrMenuToggler span:first-child{
+            transform: rotate(45deg) translate(2px, 2px) scaleX(80%);
+        }
+    
+        .animateUsrMenuToggler span:nth-child(2){
+            opacity: 0;
+        }
+    
+        .animateUsrMenuToggler span:last-child{
+            transform: rotate(-45deg) translate(-2px, 2px) scaleX(80%);
+        }
+
+        .customerIndServiceTitle{
+            @apply text-[10px] p-[2px];
+        }
+
+        .customerIndServiceSubTitle{
+            @apply text-[11px];
+        }
+
+        .customerIndServiceSubText{
+            @apply max-w-[250px] text-[10px];
+        }
+
+        .customerIndServiceInfo{
+            @apply space-y-1 text-[8px] px-2 py-1;
+        }
+
+        .customerIndServiceInfo{
+            @apply text-[8px] px-2 space-y-1 pt-1;
+        }
+
+        .customerSideBarSlide{
+            @apply max-h-[80vh];
+        }
+
+        .customerSideBarSlideTopPart{
+            @apply hidden;
+        }
+
+        .customerSideBarSlideTopBottom{
+            @apply justify-center;
+        }
+    }
+}
