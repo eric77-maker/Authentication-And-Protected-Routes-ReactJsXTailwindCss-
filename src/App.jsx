@@ -1,4 +1,6 @@
-import { RouterProvider, createBrowserRouter } from "react-router"
+import { RouterProvider, createBrowserRouter } from "react-router";
+
+import ExampleBank from "../components/ExampleBank";
 import HeroSection from "../components/HeroSection";
 import Register, {loader as registerLoader, action as registerAction} from "../components/Register";
 import LoginPage, {loader as loginLoader, action as loginAction} from "../components/LoginPage";
@@ -19,11 +21,10 @@ import CustomerWithdrawPage, {loader as customerWithdrawPageLoader, action as cu
 
 import EditCustomerInfo, {loader as editCustomerInfoLoader, action as editCustomerInfoAction} from "../components/EditCustomerInfo";
 import InboxHelpCenter, {loader as inboxHelpCenterLoader, action as inboxHelpCenterAction} from "../components/InboxHelpCenter";
-import UBA from "../components/UBA";
 
 
 const routes = [
-    {path: '/', element: <UBA />, children: [
+    {path: '/', element: <ExampleBank />, children: [
         {path: '', element: <HeroSection />},
         {path: 'login', element: <LoginPage />, loader: loginLoader, action: loginAction},
         {path: 'register', element: <Register />, loader: registerLoader, action: registerAction},

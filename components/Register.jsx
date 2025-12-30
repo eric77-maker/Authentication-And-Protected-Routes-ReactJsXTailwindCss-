@@ -163,7 +163,7 @@ export default function Register(){
                                 <div className="w-[100%] mx-auto flex justify-between mt-10">
                                     {page <= 1 && <div></div>}
                                     {page > 1 &&
-                                        <span onClick={() => setPage(p => p - 1)} className="regBtn bg-cyan-400 text-[min(14px,2vh)] text-slate-600 rounded">
+                                        <span onClick={() => setPage(p => p - 1)} className="btnFadeIn regBtn bg-cyan-400 text-[min(14px,2vh)] text-slate-600 rounded">
                                             Previous
                                         </span>
                                     }
@@ -175,7 +175,7 @@ export default function Register(){
                                     }
 
                                     {page > 2 && 
-                                        <button className="regBtn text-[min(14px,2vh)] bg-blue-800 text-white rounded">Register</button>
+                                        <button className="btnFadeIn regBtn text-[min(14px,2vh)] bg-blue-800 text-white rounded">Register</button>
                                     }
                                 </div>
 

@@ -5,7 +5,7 @@ import { Outlet } from "react-router"
 
 
 
-export default function UBA(){
+export default function ExampleBank(){
     return(
         <div className="grow flex flex-col //bg-indigo-300 bg-slate-500 mainDiv">
             <div className="relative grow flex flex-col container mx-auto">

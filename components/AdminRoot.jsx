@@ -1,8 +1,11 @@
 import profileImg from '/src/assets/img6.jpeg';
-import { NavLink } from 'react-router';
+import { NavLink, redirect } from 'react-router';
 
 
 export function loader(){
+    if(!true){
+        return redirect('../login');
+    }
     return null;
 };
 

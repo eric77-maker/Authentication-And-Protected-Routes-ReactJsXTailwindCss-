@@ -18,8 +18,8 @@ export default function AdminGreetings(){
     return(
         <div className="grow flex flex-col space-y-[min(6vh,30px)] pt-[5vh]">
             <div className=" flex flex-col space-y-2 items-center">
-                <p className="fadeIn text-[12px] font-[bold] sm:text-[17px] md:text-[min(1.4rem,3.6vw)] whitespace-nowrap hover:scale-105 transition text-indigo-300">
-                    Welcome To The Administration Dashboard of <span className="text-indigo-100">Fidelity</span> Bank
+                <p className="fadeIn text-[max(2vh,2.1vw)] font-[bold] md:text-[min(1.5rem,3.5vh)] whitespace-nowrap hover:scale-105 transition text-indigo-300">
+                    <span className="hidden sm:inline-block">Welcome To The</span> <span>Administration Dashboard of <span className="text-indigo-100">Example</span> Bank</span>
                 </p>
 
                 <NavLink to="login" className="fadeUp text-[9px] sm:text-[min(12px,2.2vh)] text-white hover:text-orange-200 transition underline underline-offset-6 decoration-orange-300">
@@ -30,7 +30,7 @@ export default function AdminGreetings(){
             <div ref={adminsToMeetOuterDivRef} className="grow max-h-[50vh] content-center max-w-[100%] shadow-lg shadow-slate-700/70 overflow-x-scroll removeScrollBar">
 
                 <div className="fadeInTwo flex justify-center items-center space-x-10 w-[100vw] px-10">
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>
@@ -49,7 +49,8 @@ export default function AdminGreetings(){
                             Year: <span className="text-blue-300">2011 to date</span>
                         </p>
                     </div>
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>
@@ -68,7 +69,7 @@ export default function AdminGreetings(){
                             Year: <span className="text-blue-300">2011 to date</span>
                         </p>
                     </div>
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>
@@ -87,7 +88,7 @@ export default function AdminGreetings(){
                             Year: <span className="text-blue-300">2011 to date</span>
                         </p>
                     </div>
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>
@@ -106,7 +107,7 @@ export default function AdminGreetings(){
                             Year: <span className="text-blue-300">2011 to date</span>
                         </p>
                     </div>
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>
@@ -125,7 +126,7 @@ export default function AdminGreetings(){
                             Year: <span className="text-blue-300">2011 to date</span>
                         </p>
                     </div>
-                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[max(300px,44vh)] rounded">
+                    <div className="w-[250px] hover:scale-[101%] bg-blue-900/90 brightness-[80%] text-white flex flex-col pt-[3%] space-y-[min(12px,2.2vh)] items-center h-[40vh] rounded">
                         <p className="text-[9px] sm:text-[min(14px,2.5vh)] text-green-100">
                             Meet
                         </p>

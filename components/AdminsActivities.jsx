@@ -23,11 +23,11 @@ export default function AdminsActivities(){
                         20th Aniversary
                     </p>
 
-                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[max(10px,2vh)] text-slate-900 bg-slate-200/50">
+                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[min(10px,2vh)] text-slate-900 bg-slate-200/50">
                         <p className="bg-purple-500/50 text-slate-800 px-[0.2em]">
                             Description
                         </p>
-                        <p className="text-center">
+                        <p className="text-[7px] sm:text-[min(11px,2.2vh)] text-center">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur quaerat cum exercitationem...
                         </p>             
                     </div>
@@ -42,15 +42,15 @@ export default function AdminsActivities(){
                     </div>
 
                     <div className="py-[4vh] flex flex-col items-center space-y-[2px] py-[0.2em] bg-indigo-500/30 w-[100%]">
-                        <p className="text-[10px] sm:text-[max(9px,2vh)]">
+                        <p className="text-[10px] sm:text-[min(12px,2.4vh)]">
                             Date
                         </p>
-                        <p className="text-[6px] sm:text-[max(7px,1.6vh)]">
+                        <p className="text-[6px] sm:text-[min(8.5px,1.9vh)]">
                             20/07/2025
                         </p>
                     </div>
 
-                    <div className="grow flex items-center text-[10px] sm:text-[max(9px,2vh)] text-blue-100">
+                    <div className="grow flex items-center text-[7px] sm:text-[max(7px,1.6vh)] text-blue-100">
                         <Link className="underline decoration-blue-200" to="#">
                             more...
                         </Link>
@@ -63,11 +63,11 @@ export default function AdminsActivities(){
                         20th Aniversary
                     </p>
 
-                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[max(10px,2vh)] text-slate-900 bg-slate-200/50">
+                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[min(10px,2vh)] text-slate-900 bg-slate-200/50">
                         <p className="bg-purple-500/50 text-slate-800 px-[0.2em]">
                             Description
                         </p>
-                        <p className="text-center">
+                        <p className="text-[7px] sm:text-[min(11px,2.2vh)] text-center">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur quaerat cum exercitationem...
                         </p>             
                     </div>
@@ -82,15 +82,15 @@ export default function AdminsActivities(){
                     </div>
 
                     <div className="py-[4vh] flex flex-col items-center space-y-[2px] py-[0.2em] bg-indigo-500/30 w-[100%]">
-                        <p className="text-[10px] sm:text-[max(9px,2vh)]">
+                        <p className="text-[10px] sm:text-[min(12px,2.4vh)]">
                             Date
                         </p>
-                        <p className="text-[6px] sm:text-[max(7px,1.6vh)]">
+                        <p className="text-[6px] sm:text-[min(8.5px,1.9vh)]">
                             20/07/2025
                         </p>
                     </div>
 
-                    <div className="grow flex items-center text-[10px] sm:text-[max(9px,2vh)] text-blue-100">
+                    <div className="grow flex items-center text-[7px] sm:text-[max(7px,1.6vh)] text-blue-100">
                         <Link className="underline decoration-blue-200" to="#">
                             more...
                         </Link>
@@ -102,11 +102,11 @@ export default function AdminsActivities(){
                         20th Aniversary
                     </p>
 
-                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[max(10px,2vh)] text-slate-900 bg-slate-200/50">
+                    <div className="flex flex-col items-center text-[8px] py-[0.2em] sm:text-[min(10px,2vh)] text-slate-900 bg-slate-200/50">
                         <p className="bg-purple-500/50 text-slate-800 px-[0.2em]">
                             Description
                         </p>
-                        <p className="text-center">
+                        <p className="text-[7px] sm:text-[min(11px,2.2vh)] text-center">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur quaerat cum exercitationem...
                         </p>             
                     </div>
@@ -121,15 +121,15 @@ export default function AdminsActivities(){
                     </div>
 
                     <div className="py-[4vh] flex flex-col items-center space-y-[2px] py-[0.2em] bg-indigo-500/30 w-[100%]">
-                        <p className="text-[10px] sm:text-[max(9px,2vh)]">
+                        <p className="text-[10px] sm:text-[min(12px,2.4vh)]">
                             Date
                         </p>
-                        <p className="text-[6px] sm:text-[max(7px,1.6vh)]">
+                        <p className="text-[6px] sm:text-[min(8.5px,1.9vh)]">
                             20/07/2025
                         </p>
                     </div>
 
-                    <div className="grow flex items-center text-[10px] sm:text-[max(9px,2vh)] text-blue-100">
+                    <div className="grow flex items-center text-[7px] sm:text-[max(7px,1.6vh)] text-blue-100">
                         <Link className="underline decoration-blue-200" to="#">
                             more...
                         </Link>

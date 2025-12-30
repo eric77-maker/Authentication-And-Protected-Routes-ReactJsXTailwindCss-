@@ -11,44 +11,44 @@ export function loader(){
 
 
 export default function CustomerServices(){
-    const usrMenuBtnTogglerRef = useRef(null);
-    const usrMenuCloseBtnTogglerRef = useRef(null);
-    const usrMenuRef = useRef(null);
+    const customerMenuBtnTogglerRef = useRef(null);
+    const customerMenuCloseBtnTogglerRef = useRef(null);
+    const customerMenuRef = useRef(null);
     const profileImgRef = useRef(null);
 
     useEffect(() => {
         const toggleBtnAnimation = () => {
-            usrMenuRef.current.classList.toggle('animateUsrMenu');
-            usrMenuBtnTogglerRef.current.classList.toggle('animateUsrMenuToggler');
-            usrMenuCloseBtnTogglerRef.current.classList.toggle('animateUsrMenuCloseBtnToggler');
+            customerMenuRef.current.classList.toggle('animateCustomerMenu');
+            customerMenuBtnTogglerRef.current.classList.toggle('animateCustomerMenuToggler');
+            customerMenuCloseBtnTogglerRef.current.classList.toggle('animateCustomerMenuCloseBtnToggler');
             profileImgRef.current.classList.toggle('outline');
             profileImgRef.current.classList.toggle('shadow-md');
             profileImgRef.current.classList.toggle('lg:shadow-lg');
             profileImgRef.current.classList.toggle('xl:shadow-lg');
         };
 
-        usrMenuBtnTogglerRef.current && usrMenuBtnTogglerRef.current.addEventListener('click', toggleBtnAnimation);
+        customerMenuBtnTogglerRef.current && customerMenuBtnTogglerRef.current.addEventListener('click', toggleBtnAnimation);
 
         return () => {
-            usrMenuBtnTogglerRef.current && usrMenuBtnTogglerRef.current.removeEventListener('click', toggleBtnAnimation)
+            customerMenuBtnTogglerRef.current && customerMenuBtnTogglerRef.current.removeEventListener('click', toggleBtnAnimation)
         };
     }, []);
 
     useEffect(() => {
         const toggleBtnAnimation = () => {
-            usrMenuRef.current.classList.toggle('animateUsrMenu');
-            usrMenuCloseBtnTogglerRef.current.classList.toggle('animateUsrMenuCloseBtnToggler');
-            usrMenuBtnTogglerRef.current.classList.toggle('animateUsrMenuToggler');
+            customerMenuRef.current.classList.toggle('animateCustomerMenu');
+            customerMenuCloseBtnTogglerRef.current.classList.toggle('animateCustomerMenuCloseBtnToggler');
+            customerMenuBtnTogglerRef.current.classList.toggle('animateCustomerMenuToggler');
             profileImgRef.current.classList.toggle('outline');
             profileImgRef.current.classList.toggle('shadow-md');
             profileImgRef.current.classList.toggle('lg:shadow-lg');
             profileImgRef.current.classList.toggle('xl:shadow-lg');
         };
 
-        usrMenuCloseBtnTogglerRef.current && usrMenuCloseBtnTogglerRef.current.addEventListener('click', toggleBtnAnimation);
+        customerMenuCloseBtnTogglerRef.current && customerMenuCloseBtnTogglerRef.current.addEventListener('click', toggleBtnAnimation);
 
         return () => {
-            usrMenuCloseBtnTogglerRef.current && usrMenuCloseBtnTogglerRef.current.removeEventListener('click', toggleBtnAnimation)
+            customerMenuCloseBtnTogglerRef.current && customerMenuCloseBtnTogglerRef.current.removeEventListener('click', toggleBtnAnimation)
         };
     }, []);
 
@@ -62,21 +62,21 @@ export default function CustomerServices(){
                     <div className="grow truncate">, Eric Boakye Mpeanin</div>
                 </div>
 
-                <button ref={usrMenuBtnTogglerRef} className="border-wheat-900 usrMenuBtnToggler cursor-pointer">
+                <button ref={customerMenuBtnTogglerRef} className="border-wheat-900 customerMenuBtnToggler cursor-pointer">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
 
-            <div ref={usrMenuRef} className="customerSideBarSlide absolute flex flex-col usrMenu shadow-md shadow-blue-900/70 space-y-2 divide-y-[1px] divide-slate-800 max-w-[300px] min-w-[160px] w-[30vw] bg-slate-900 h-screen rounded right-[4vw]">
+            <div ref={customerMenuRef} className="customerSideBarSlide absolute flex flex-col customerMenu shadow-md shadow-blue-900/70 space-y-2 divide-y-[1px] divide-slate-800 max-w-[300px] min-w-[160px] w-[30vw] bg-slate-900 h-screen rounded right-[4vw]">
                 <div className="absolute top-[2%] right-[2%]">
-                    <button ref={usrMenuCloseBtnTogglerRef} className="relative border border-wheat-900 usrMenuCloseToggler cursor-pointer">
+                    <button ref={customerMenuCloseBtnTogglerRef} className="relative border border-wheat-900 customerMenuCloseToggler cursor-pointer">
                         <span></span>
                         <span></span>
                     </button>
                 </div>
-                <ul className="grow visible customerSideBarSlideTopPart lg:hidden flex-col text-white text-center space-y-[max(1.2vh,2.5px)] items-center justify-end pb-2">
+                <ul className="grow visible customerSideBarSlideTopPart text-[9px] sm:text-[min(12px,2.2vh)] lg:hidden flex-col text-white text-center space-y-[max(0.8vh,0.25rem)] sm:space-y-[max(0.2rem,0.75vh)] items-center justify-end pb-2">
                     <li className="w-[80%]">
                         <NavLink className={({isActive}) => isActive? "block opacity-0.9 transition duration-[0.1s] font-bold underline decoration-1 decoration-blue-400 underline-offset-4" : "block hover:scale-[105%] opacity-0.9 transition duration-[0.1s]"} end to=".">Customer Info.</NavLink>
                     </li>
@@ -91,7 +91,7 @@ export default function CustomerServices(){
                     </li>
                 </ul>
 
-                <ul className="customerSideBarSlideTopBottom grow flex flex-col text-white text-center space-y-[max(1.2vh,2.5px)] items-center lg:justify-center xl:justify-center">
+                <ul className="customerSideBarSlideTopBottom grow text-[9px] sm:text-[min(12px,2.2vh)] flex flex-col text-white text-center space-y-[max(0.8vh,0.25rem)] sm:space-y-[max(0.2rem,0.75vh)] items-center lg:justify-center xl:justify-center">
                     <li className="bg-purple-800 text-slate-800 font-bold w-[80%] rounded">
                         Other Services
                     </li>
@@ -113,11 +113,11 @@ export default function CustomerServices(){
                 </ul>
             </div>
 
-            <div className="absolute usrProfileImgDiv -translate-x-[1vw] lg:translate-x-[0] lg:left-[40%] right-[26vw]">
+            <div className="absolute customerProfileImgDiv -translate-x-[1vw] lg:translate-x-[0] lg:left-[40%] right-[26vw]">
                 <img ref={profileImgRef} src={profileImg} alt="" title="my profile picture" className="rounded-full shadow-slate-200 outline-offset-1 outline-blue-100 shadow-[1px] shadow-purple-900/80"/>
             </div>
 
-            <div className="grow flex usrServicesContentDiv space-x-5">
+            <div className="grow flex customerServicesContentDiv space-x-5">
 
                 <div className="customerSidebar lg:flex flex-col w-[200px] hideCustomerSidebar mb-1">
                     <nav className="grow bg-indigo-600/50 py-2 rounded flex flex-col space-y-[max(1.5vh,4px)] text-center text-blue-300 shadow-md">

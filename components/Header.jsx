@@ -35,13 +35,13 @@ export default function Header(){
     }, []);
 
     return(
-        <header ref={headerRef} className="mainHeader w-[99%] mx-auto bg-blue-900 rounded justify-center lg:justify-start xl:justify-start flex space-x-[10vw] items-center px-15 border-b border-blue-300">
+        <header ref={headerRef} className="mainHeader w-[99%] h-[min(55px,9vh)] mx-auto bg-blue-900 rounded justify-center lg:justify-start xl:justify-start flex space-x-[10vw] items-center px-15 border-b border-blue-300">
             <h1 className="mainHeaderTitle whitespace-nowrap text-blue-100 shadow-sm bg-indigo-500 skew-[3deg] px-2">
-                Barclays Bank
+                Example Bank
             </h1>
 
-            <div ref={headerDropDownMenuRef} className="md:hidden w-[100%] max-w-[calc(40rem-0.8%)] hideHeaderDropDownMenuOnMount hideHeaderDropDownMenu headerDropDownMenu mx-auto flex flex-col fixed top-[52px]  h-[20vh] bg-indigo-900/90 border-b border-blue-300">
-                <ul className="grow flex flex-col justify-around items-center text-white text-sm">
+            <div ref={headerDropDownMenuRef} className="md:hidden w-[100%] max-w-[calc(40rem-0.8%)] hideHeaderDropDownMenuOnMount hideHeaderDropDownMenu headerDropDownMenu mx-auto flex flex-col fixed top-[min(55px,9vh)]  h-content py-[min(2px,1.5vh)] bg-indigo-900/90 border-b border-blue-300">
+                <ul className="grow flex flex-col space-y-[max(1.2vh,0.5rem)] sm:space-y-[max(0.2rem,0.75vh)] items-center text-white text-[9px] sm:text-[min(12px,2.2vh)]">
                     <li className="w-[80%]"><NavLink className={({isActive}) => isActive? "font-bold underline decoration-1 decoration-blue-200 underline-offset-4 block text-center opacity-0.9 transition duration-[0.1s]" : "block text-center hover:scale-[115%] opacity-0.9 transition duration-[0.1s]"}  to="admin">Admins</NavLink></li>
                     <li className="w-[80%]"><NavLink  className={({isActive}) => isActive? "font-bold underline decoration-1 decoration-blue-200 underline-offset-4 block text-center opacity-0.9 transition duration-[0.1s]r" : "block text-center hover:scale-[115%] opacity-0.9 transition duration-[0.1s]"}  to="services">Services</NavLink></li>
                     <li className="w-[80%]"><NavLink className={({isActive}) => isActive? "font-bold underline decoration-1 decoration-blue-200 underline-offset-4 block text-center opacity-0.9 transition duration-[0.1s]" : "block text-center hover:scale-[115%] opacity-0.9 transition duration-[0.1s]"}  to="login">Sign In</NavLink></li>

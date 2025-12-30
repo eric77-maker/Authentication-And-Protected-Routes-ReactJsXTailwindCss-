@@ -152,10 +152,6 @@
     /* General Styles End */
 
     /* mainHeader styles */
-    .mainHeader{
-        @apply h-[55px];
-    }
-
     .mainHeaderTitle{
         @apply text-xl py-1;
     }
@@ -339,13 +335,13 @@
         @apply text-sm px-5 space-y-3 pt-5;
     }
 
-    .usrMenuBtnToggler{
+    .customerMenuBtnToggler{
         position: relative;
         transition: transform 0.4s;
         @apply w-[16px] h-[16px];
     }
 
-    .usrMenu{
+    .customerMenu{
         z-index: 6;
         transform: translateX(50%) scaleX(10%);
         transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -353,12 +349,12 @@
         font-size: clamp(1rem, 1.5vh, 1.5rem);
     }
 
-    .animateUsrMenu{
+    .animateCustomerMenu{
         transform: translateX(0);
         opacity: 1;
     }
 
-    .usrServicesContentDiv{
+    .customerServicesContentDiv{
         width: 60vw;
     } 
 
@@ -369,13 +365,13 @@
     /* customerSidebar styles end*/
 
     @media screen and (max-width: 768px) {
-        .usrServicesContentDiv{
+        .customerServicesContentDiv{
             width: 90%;
         }
     } 
 
-    /* usrMenuBtnToggler styles */
-    .usrMenuBtnToggler span{
+    /* customerMenuBtnToggler styles */
+    .customerMenuBtnToggler span{
         position: absolute;
         background-color: white;
         top: 0;
@@ -384,45 +380,45 @@
         height: 1.5px;
     }
 
-    .usrMenuBtnToggler span:first-child{
+    .customerMenuBtnToggler span:first-child{
         transform: translateY(3px) scaleX(80%);
         transition: all 0.5s;
     }
 
-    .usrMenuBtnToggler span:nth-child(2){
+    .customerMenuBtnToggler span:nth-child(2){
         transform: translateY(7px) scaleX(80%);
     }
 
-    .usrMenuBtnToggler span:last-child{
+    .customerMenuBtnToggler span:last-child{
         transform: translateY(11px) scaleX(80%);
     }
 
 
-    .animateUsrMenuToggler{
+    .animateCustomerMenuToggler{
         opacity: 0;
     }
 
-    .animateUsrMenuToggler span:first-child{
+    .animateCustomerMenuToggler span:first-child{
         transform: rotate(45deg) translate(4px, 4px) scaleX(80%);
     }
 
-    .animateUsrMenuToggler span:nth-child(2){
+    .animateCustomerMenuToggler span:nth-child(2){
         opacity: 0;
     }
 
-    .animateUsrMenuToggler span:last-child{
+    .animateCustomerMenuToggler span:last-child{
         transform: rotate(-45deg) translate(-4px, 4px) scaleX(80%);
     }
 
 
-    .usrMenuCloseToggler{
+    .customerMenuCloseToggler{
         transition: opacity 0.5s; 
         opacity: 0;
         border-radius: 50%;
         @apply w-[16px] h-[16px] bg-red-100;
     }
 
-    .usrMenuCloseToggler span{
+    .customerMenuCloseToggler span{
         position: absolute;
         @apply bg-blue-900;
         top: 0;
@@ -431,31 +427,31 @@
         height: 2px;
     }
 
-    .usrMenuCloseToggler span:first-child{
+    .customerMenuCloseToggler span:first-child{
         transform: translateY(2px);
     }
 
-    .usrMenuCloseToggler span:last-child{
+    .customerMenuCloseToggler span:last-child{
         transform: translateY(4px);
     }
 
-    .animateUsrMenuCloseBtnToggler{
+    .animateCustomerMenuCloseBtnToggler{
         opacity: 1;
     }
 
-    .animateUsrMenuCloseBtnToggler span{
+    .animateCustomerMenuCloseBtnToggler span{
         transition: all 0.5s;
     }
     
 
-    .animateUsrMenuCloseBtnToggler span:first-child{
+    .animateCustomerMenuCloseBtnToggler span:first-child{
         transform: rotate(45deg) translateY(2px) translate(4px, 2px) scaleX(80%);
     }
 
-    .animateUsrMenuCloseBtnToggler span:last-child{
+    .animateCustomerMenuCloseBtnToggler span:last-child{
         transform: rotate(-45deg) translateY(4px) translate(-4px, 0) scaleX(80%);
     }
-    /* usrMenuBtnToggler styles End */
+    /* customerMenuBtnToggler styles End */
 
 
     /* customerSideBarSlide styles */
@@ -465,7 +461,7 @@
     }
     /* customerSideBarSlide styles end */
 
-    .usrProfileImgDiv{
+    .customerProfileImgDiv{
         @apply top-[2.5vh] sm:top-[2vh]   min-w-[8vh] lg:min-w-[12vh] max-w-[60px] sm:max-w-[80px];
         z-index: 6;
     }
@@ -486,10 +482,6 @@
 
     @media screen and (max-height: 540px) and (min-aspect-ratio: 7/4) {
         /* mainHeader styles */
-        .mainHeader{
-            @apply h-[8vh];
-        }
-
         .mainHeaderTitle{
             @apply text-[13px] py-[1px];
         }
@@ -524,7 +516,7 @@
             @apply top-[1vh] text-[8px]  py-[3px] px-[0.5rem];
         }
 
-        .usrProfileImgDiv{
+        .customerProfileImgDiv{
             @apply top-[1.8vh] min-w-[8vh] lg:min-w-[12vh] max-w-[11vh];
             z-index: 6;
         }
@@ -537,45 +529,45 @@
             @apply flex;
         }
 
-        .usrMenuBtnToggler{
+        .customerMenuBtnToggler{
             @apply w-[8px] h-[8px];
         }
 
-        .usrMenuBtnToggler span{
+        .customerMenuBtnToggler span{
             height: 1px;
         }
 
-        .usrMenuBtnToggler span:first-child{
+        .customerMenuBtnToggler span:first-child{
             transform: translateY(1px);
             transition: all 0.5s;
         }
     
-        .usrMenuBtnToggler span:nth-child(2){
+        .customerMenuBtnToggler span:nth-child(2){
             transform: translateY(4px);
         }
     
-        .usrMenuBtnToggler span:last-child{
+        .customerMenuBtnToggler span:last-child{
             transform: translateY(7px);
         }
     
-        .animateUsrMenuToggler{
+        .animateCustomerMenuToggler{
             transform: rotate(90deg);
             border-radius: 50%;
         }
     
-        .animateUsrMenuToggler span{
+        .animateCustomerMenuToggler span{
             background-color: wheat;
         }
     
-        .animateUsrMenuToggler span:first-child{
+        .animateCustomerMenuToggler span:first-child{
             transform: rotate(45deg) translate(2px, 2px) scaleX(80%);
         }
     
-        .animateUsrMenuToggler span:nth-child(2){
+        .animateCustomerMenuToggler span:nth-child(2){
             opacity: 0;
         }
     
-        .animateUsrMenuToggler span:last-child{
+        .animateCustomerMenuToggler span:last-child{
             transform: rotate(-45deg) translate(-2px, 2px) scaleX(80%);
         }
 
