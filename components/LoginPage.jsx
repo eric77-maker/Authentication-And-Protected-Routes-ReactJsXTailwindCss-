@@ -93,8 +93,15 @@ export default function LoginPage(){
                             Login
                         </button>
 
-                        <div className="text-[min(9px,2vh)] pl-1 mt-3 text-white w-[100%]">
-                            Don't have account? <Link to="/register" className="underline text-[min(8.5px,1.8vh)] text-blue-200 hover:text-blue-500/80 underline-offset-3">register</Link>
+                        <div className="flex justify-between text-[min(9px,2vh)] pl-1 mt-3 text-white w-[100%] bg-gray-600/50 py-[0.4rem] rounded">
+                            <div>
+                                Don't have account? <Link to="/register" className="underline text-[min(8.5px,1.8vh)] text-blue-200 hover:text-blue-500/80 underline-offset-3">register</Link>
+                            </div>
+                            <div>
+                                <Link to="#" className="underline text-[min(8.5px,1.8vh)] text-white px-[0.2em] hover:scale-102 hover:text-blue-200/80 underline-offset-[0.25em] decoration-orange-300">
+                                    forgot password
+                                </Link>
+                            </div>
                         </div>
 
                         {credsInvalid && 

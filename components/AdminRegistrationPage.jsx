@@ -185,7 +185,7 @@ export default function AdminRegistrationPage(){
                                     }
                                 </div>
 
-                                <div className="text-[min(9px,2vh)] pl-1 mt-3 text-white w-[100%]">
+                                <div className="text-[min(9px,2vh)] pl-1 mt-3 text-white w-[100%] bg-gray-600/50 py-[0.4rem] rounded">
                                     Already have account? <Link to="../login" className="underline text-[min(8.5px,1.8vh)] text-blue-200 hover:text-blue-500/80 underline-offset-3">login</Link>
                                 </div>
 

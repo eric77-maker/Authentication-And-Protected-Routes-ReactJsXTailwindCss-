@@ -18,7 +18,7 @@ export default function CustomerServices(){
 
     useEffect(() => {
         const toggleBtnAnimation = () => {
-            customerMenuRef.current.classList.toggle('animateCustomerMenu');
+            customerMenuRef.current.classList.toggle('animateSlideMenu');
             customerMenuBtnTogglerRef.current.classList.toggle('animateCustomerMenuToggler');
             customerMenuCloseBtnTogglerRef.current.classList.toggle('animateCustomerMenuCloseBtnToggler');
             profileImgRef.current.classList.toggle('outline');
@@ -36,7 +36,7 @@ export default function CustomerServices(){
 
     useEffect(() => {
         const toggleBtnAnimation = () => {
-            customerMenuRef.current.classList.toggle('animateCustomerMenu');
+            customerMenuRef.current.classList.toggle('animateSlideMenu');
             customerMenuCloseBtnTogglerRef.current.classList.toggle('animateCustomerMenuCloseBtnToggler');
             customerMenuBtnTogglerRef.current.classList.toggle('animateCustomerMenuToggler');
             profileImgRef.current.classList.toggle('outline');
@@ -69,7 +69,7 @@ export default function CustomerServices(){
                 </button>
             </div>
 
-            <div ref={customerMenuRef} className="customerSideBarSlide absolute flex flex-col customerMenu shadow-md shadow-blue-900/70 space-y-2 divide-y-[1px] divide-slate-800 max-w-[300px] min-w-[160px] w-[30vw] bg-slate-900 h-screen rounded right-[4vw]">
+            <div ref={customerMenuRef} className="customerSideBarSlide absolute top-[2vh] flex flex-col slideMenu shadow-md shadow-blue-900/70 space-y-2 divide-y-[1px] divide-slate-800 w-[max(18vh,20vw)] min-w-[120px] max-w-[30vw] sm:max-w-[100vw] bg-slate-900 h-screen rounded right-[4vw]">
                 <div className="absolute top-[2%] right-[2%]">
                     <button ref={customerMenuCloseBtnTogglerRef} className="relative border border-wheat-900 customerMenuCloseToggler cursor-pointer">
                         <span></span>
@@ -87,7 +87,7 @@ export default function CustomerServices(){
                         <NavLink className={({isActive}) => isActive? "block opacity-0.9 transition duration-[0.1s] font-bold underline decoration-1 decoration-blue-400 underline-offset-4" : "block hover:scale-[105%] opacity-0.9 transition duration-[0.1s]"} to="edit">Credentials Edit</NavLink>
                     </li>
                     <li className="w-[80%]">
-                        <NavLink className={({isActive}) => isActive? "block opacity-0.9 transition duration-[0.1s] font-bold underline decoration-1 decoration-blue-400 underline-offset-4" : "block hover:scale-[105%] opacity-0.9 transition duration-[0.1s]"} to="inbox/center">Inbox Help Center</NavLink>
+                        <NavLink className={({isActive}) => isActive? "block opacity-0.9 transition duration-[0.1s] font-bold underline decoration-1 decoration-blue-400 underline-offset-4 whitespace-nowrap" : "block hover:scale-[105%] opacity-0.9 transition duration-[0.1s] whitespace-nowrap"} to="inbox/center">Inbox Help Center</NavLink>
                     </li>
                 </ul>
 
@@ -113,7 +113,7 @@ export default function CustomerServices(){
                 </ul>
             </div>
 
-            <div className="absolute customerProfileImgDiv -translate-x-[1vw] lg:translate-x-[0] lg:left-[40%] right-[26vw]">
+            <div className="absolute customerProfileImgDiv -translate-x-[1vw] lg:translate-x-[0] lg:left-[40%] right-[18vw]">
                 <img ref={profileImgRef} src={profileImg} alt="" title="my profile picture" className="rounded-full shadow-slate-200 outline-offset-1 outline-blue-100 shadow-[1px] shadow-purple-900/80"/>
             </div>
 

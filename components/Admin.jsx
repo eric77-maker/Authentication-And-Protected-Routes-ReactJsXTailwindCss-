@@ -14,7 +14,7 @@ export default function Admin(){
         const toggleBtnAnimation = () => {
             adminMenuBtnTogglerRef.current.classList.toggle('animateAdminMenuToggler');
             adminMenuBtnTogglerRef.current.classList.toggle('border');
-            adminMenuRef.current.classList.toggle('animateUsrMenu');
+            adminMenuRef.current.classList.toggle('animateSlideMenu');
             //adminDimCoverRef.current.classList.toggle('hidden');
         };
 
@@ -70,8 +70,8 @@ export default function Admin(){
                 </button>
             </nav>
 
-            <div ref={adminMenuRef} className="absolute lg:hidden text-[0.9rem] flex flex-col usrMenu shadow-md shadow-blue-400/50 max-w-[300px] min-w-[160px] w-[30vw]  bg-blue-900 saturate-[50%] h-screen max-h-[88vh] rounded top-[10px] right-[4vw]">
-                <ul className="grow flex flex-col text-center text-white space-y-2 items-center justify-center">
+            <div ref={adminMenuRef} className="absolute lg:hidden flex flex-col slideMenu shadow-md shadow-blue-400/50 w-[max(18vh,20vw)] min-w-[120px] max-w-[30vw] sm:max-w-[100vw]  bg-blue-900 saturate-[50%] h-screen rounded top-[10px] right-[4vw]">
+                <ul className="grow text-[9px] sm:text-[min(12px,2.2vh)] flex flex-col text-center text-white space-y-2 items-center justify-center">
                     <li className="w-[80%]">
                         <NavLink className={({isActive}) => isActive? "block underline underline-offset-4 decoration-blue-300 opacity-0.9 transition duration-[0.1s]" : "block hover:scale-[105%] opacity-0.9 transition duration-[0.1s]"} to="." end>Greetings</NavLink>
                     </li>
